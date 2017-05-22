@@ -29,12 +29,10 @@
             <div class="uk-card uk-card-default">
                 <div class="uk-card-header">
                     <h3 class="uk-card-title uk-margin-remove-bottom">Kapitaalsom</h3>
-                    <p>Stap 1: verzamel de informatie</p>
-                    <progress class="uk-progress" value="20" max="100"></progress>
                 </div>
                 <div class="uk-card-body">
-                    <p>Een kapitaal is <span class="toggle-mark">SRD 12.000,-</span> groot en staat uit tegen <span class="toggle-mark"><span id="frac"></span> %</span>                        rente per jaar.</p>
-                    <p>Na hoeveel maanden brengt het kapitaal <span class="toggle-mark">SRD 360,-</span>                        aan rente op?</p>
+                    <p>Een kapitaal is <span class="toggle-mark">SRD 12.000,-</span> groot en staat uit tegen <span class="toggle-mark"><span id="frac"></span>                        %</span> rente per jaar.</p>
+                    <p>Na hoeveel maanden brengt het kapitaal <span class="toggle-mark">SRD 360,-</span> aan rente op?</p>
 
                     <ol class="uk-list">
                         <li>A: 8 maanden</li>
@@ -42,9 +40,9 @@
                         <li>C: 9 maanden</li>
                         <li>D: 18 maanden</li>
                     </ol>
-                    <p>Voordat we beginnen met rekenen <button class="uk-button uk-button-default uk-button-small" uk-toggle="target: .toggle-mark; cls: uk-text-bold uk-label">verzamelen</button> we eerst de meest belangrijke informatie.</p>
+                    <p>Voordat we beginnen met rekenen <button class="uk-button uk-button-default uk-button-small" uk-toggle="target: .toggle-mark; cls: uk-text-bold uk-label">verzamelen</button>                        we eerst de meest belangrijke informatie.</p>
                     <p>Deze informatie combineren we met de juiste formule om de som op te lossen.</p>
-            
+
                 </div>
                 <div class="uk-card-footer uk-flex uk-flex-between">
                     <a href="index.html" class="uk-button uk-button-text">Vorige</a>
@@ -63,7 +61,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit-icons.min.js" integrity="sha256-BtKiVFqAoEVJYnSoG1tt98EQ11R3QjUCB9AtrW+66wo="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script>
-    <script>katex.render("4\\dfrac{1}{2}", frac);</script> 
+    <script>
+        katex.render("4\\frac{1}{2}", frac);
+    </script>
 </body>
 
 </html>

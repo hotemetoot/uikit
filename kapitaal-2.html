@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css">
     <link href="css/uikit-custom.css" rel="stylesheet">
 </head>
 
@@ -34,7 +35,8 @@
                 </div>
                 <div class="uk-card-body">
                     <p>Voor kapitaalsommen gebruiken we de volgende formule:</p>
-                        <p class="uk-text-lead">opbrengst in SRD / rente per jaar in SRD = tijd in jaren</p>
+                    <p class="uk-text-lead">opbrengst in SRD / rente per jaar in SRD = tijd in jaren</p>
+                    <span id="frac"></span>
                 </div>
                 <div class="uk-card-footer uk-flex uk-flex-between">
                     <a href="kapitaal-1.html" class="uk-button uk-button-text">Vorige</a>
@@ -52,6 +54,8 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit-icons.min.js" integrity="sha256-BtKiVFqAoEVJYnSoG1tt98EQ11R3QjUCB9AtrW+66wo="
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script>
+    <script>katex.render("4\\dfrac{opbrengst in SRD}{2}", frac);</script>
 </body>
 
 </html>

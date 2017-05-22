@@ -2,3 +2,6 @@ p, li {
     color: black;
 }
 
+.uk-list>li:nth-child(n+2), .uk-list>li>ul {
+    margin-top: 0px;
+}
