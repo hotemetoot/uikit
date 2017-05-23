@@ -5,3 +5,13 @@ p, li {
 .uk-list>li:nth-child(n+2), .uk-list>li>ul {
     margin-top: 0px;
 }
+
+.katex .mathit {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-style: normal;
+    color: black;
+}
+
+.katex {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}

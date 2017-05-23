@@ -26,13 +26,11 @@
     <div class="uk-section uk-section-muted" uk-height-viewport="expand: true">
         <div class="uk-container uk-container-small">
 
-            <div class="uk-card uk-card-default">
-                <div class="uk-card-header">
-                    <h3 class="uk-card-title uk-margin-remove-bottom">Kapitaalsom</h3>
-                    <p>Stap 1: verzamel de belangrijke informatie</p>
-                </div>
-                <div class="uk-card-body">
-                    <p>Een kapitaal is <span class="toggle-mark">SRD 12.000,-</span> groot en staat uit tegen <span class="toggle-mark"><span id="frac"></span>                        %</span> rente per jaar.</p>
+            <ul uk-accordion="multiple: true">
+                <li class="uk-open">
+                    <h3 class="uk-accordion-title">Kapitaalsom</h3>
+                    <div class="uk-accordion-content">
+                        <p>Een kapitaal is <span class="toggle-mark">SRD 12.000,-</span> groot en staat uit tegen <span class="toggle-mark"><span id="frac"></span>                        %</span> rente per jaar.</p>
                     <p>Na hoeveel maanden brengt het kapitaal <span class="toggle-mark">SRD 360,-</span> aan rente op?</p>
 
                     <ol class="uk-list">
@@ -41,14 +39,25 @@
                         <li>C: 9 maanden</li>
                         <li>D: 18 maanden</li>
                     </ol>
-                    <p>Voordat we beginnen met rekenen verzamelen we eerst de meest <button class="uk-button uk-button-default uk-button-small" uk-toggle="target: .toggle-mark; cls: uk-label">belangrijke informatie.</button></p>
+                    </div>
+                </li>
+                <li>
+                    <h3 class="uk-accordion-title">Item 2</h3>
+                    <div class="uk-accordion-content">
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor reprehenderit.</p>
+                    </div>
+                </li>
+                <li>
+                    <h3 class="uk-accordion-title">Item 3</h3>
+                    <div class="uk-accordion-content">
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat proident.</p>
+                    </div>
+                </li>
+            </ul>
 
-                </div>
-                <div class="uk-card-footer uk-flex uk-flex-between">
-                    <a href="index.html" class="uk-button uk-button-text">Vorige</a>
-                    <a href="kapitaal-2.html" class="uk-button uk-button-text">Volgende</a>
-                </div>
-            </div>
+
         </div>
     </div>
 
@@ -62,7 +71,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script>
     <script>
-        katex.render("4\\frac{1}{2}", frac);
+        katex.render("4\\frac{1}{2}\\%", frac);
     </script>
 </body>
 

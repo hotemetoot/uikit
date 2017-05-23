@@ -30,13 +30,14 @@
                 <div class="uk-card-header">
                     <h3 class="uk-card-title uk-margin-remove-bottom">Kapitaalsom</h3>
                     <p>Stap 2: kies de juiste formule</p>
-                    <progress class="uk-progress" value="40" max="100"></progress>
 
                 </div>
                 <div class="uk-card-body">
-                    <p>Voor kapitaalsommen gebruiken we de volgende formule:</p>
-                    <p class="uk-text-lead">opbrengst in SRD / rente per jaar in SRD = tijd in jaren</p>
+                    <p>Voor kapitaalsommen gebruik je de volgende formule:</p>
                     <span id="frac"></span>
+                    <p>Opbrengst in SRD = <span class="uk-label">360 SRD</span></p>
+                    <p>Rente per jaar in SRD = <span class="uk-label">?</span></p>
+                    <p>Om de som op te lossen moet je dus eerst nog de rente per jaar in SRD berekenen.</p>
                 </div>
                 <div class="uk-card-footer uk-flex uk-flex-between">
                     <a href="kapitaal-1.html" class="uk-button uk-button-text">Vorige</a>
@@ -55,7 +56,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit-icons.min.js" integrity="sha256-BtKiVFqAoEVJYnSoG1tt98EQ11R3QjUCB9AtrW+66wo="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script>
-    <script>katex.render("4\\dfrac{opbrengst in SRD}{2}", frac);</script>
+    <script>
+        katex.render(
+            "\\dfrac{opbrengst\\space in\\space SRD}{rente\\space per\\space jaar\\space in\\space SRD}=tijd\\space in\\space jaren",
+            frac);
+    </script>
 </body>
 
 </html>
