@@ -27,32 +27,53 @@
         <div class="uk-container uk-container-small">
 
             <ul uk-accordion="multiple: true">
-                <li class="uk-open">
-                    <h3 class="uk-accordion-title">Kapitaalsom</h3>
-                    <div class="uk-accordion-content">
-                        <p>Een kapitaal is <span class="toggle-mark">SRD 12.000,-</span> groot en staat uit tegen <span class="toggle-mark"><span id="frac"></span>                        %</span> rente per jaar.</p>
-                    <p>Na hoeveel maanden brengt het kapitaal <span class="toggle-mark">SRD 360,-</span> aan rente op?</p>
 
-                    <ol class="uk-list">
-                        <li>A: 8 maanden</li>
-                        <li>B: 6 maanden</li>
-                        <li>C: 9 maanden</li>
-                        <li>D: 18 maanden</li>
-                    </ol>
+                <!--stap 1-->
+                <li>
+                    <h3 class="uk-accordion-title uk-text-primary uk-text-large">Stap 1: lees de som zorgvuldig</h3>
+                    <div class="uk-accordion-content">
+                        <p>Een kapitaal is <span class="toggle-mark">SRD 12.000,-</span> groot en staat uit tegen <span class="toggle-mark"><span id="frac1"></span>                            rente per jaar.</p>
+                        <p>Na hoeveel maanden brengt het kapitaal <span class="toggle-mark">SRD 360,-</span> aan rente op?</p>
+
+                        <ol class="uk-list">
+                            <li>A: 8 maanden</li>
+                            <li>B: 6 maanden</li>
+                            <li>C: 9 maanden</li>
+                            <li>D: 18 maanden</li>
+                        </ol>
                     </div>
                 </li>
+
+                <!--stap 2-->
                 <li>
-                    <h3 class="uk-accordion-title">Item 2</h3>
+                    <h3 class="uk-accordion-title uk-text-primary uk-text-large">Stap 2: verzamel de belangrijke informatie</h3>
                     <div class="uk-accordion-content">
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor reprehenderit.</p>
+                        <ul class="uk-list">
+                            <li>Het kapitaal = <span class="uk-label"> 12.000 SRD</span></li>
+                            <li>De rente per jaar = <span class="uk-label" id="frac2"></span></li>
+                            <li>De opbrengst is = <span class="uk-label"> 360 SRD</span></li>
+                        </ul>
                     </div>
                 </li>
+
+                <!--stap 3-->
                 <li>
-                    <h3 class="uk-accordion-title">Item 3</h3>
+                    <h3 class="uk-accordion-title uk-text-primary uk-text-large">Stap 3: kies de juiste formule</h3>
                     <div class="uk-accordion-content">
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat proident.</p>
+                        <p>Voor kapitaalsommen gebruik je de volgende formule:</p>
+                        <span id="frac3"></span>
+                        <p>Om de som op te lossen moet je dus eerst nog de rente per jaar in SRD berekenen.</p>
+                    </div>
+                </li>
+
+                <!--stap 4-->
+                <li>
+                    <h3 class="uk-accordion-title uk-text-primary uk-text-large">Stap 4: bereken de rente per jaar in SRD</h3>
+                    <div class="uk-accordion-content">
+                        <p class="uk-margin-remove">rente per jaar x kapitaal = rente per jaar in SRD</p>
+                        <p class="uk-margin-remove"><span class="uk-label" id="frac4"></span> x <span class="uk-label">12.000 SRD</span> = rente per jaar in SRD</p>
+
+
                     </div>
                 </li>
             </ul>
@@ -71,7 +92,13 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script>
     <script>
-        katex.render("4\\frac{1}{2}\\%", frac);
+        katex.render("4\\frac{1}{2}\\%", frac1);
+        katex.render("4\\frac{1}{2}\\%", frac2);
+        katex.render(
+            "\\dfrac{opbrengst\\space in\\space SRD}{rente\\space per\\space jaar\\space in\\space SRD}=tijd\\space in\\space jaren",
+            frac3);
+        katex.render("4\\frac{1}{2}\\%", frac4);
+
     </script>
 </body>
 
