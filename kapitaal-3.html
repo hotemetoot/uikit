@@ -32,7 +32,8 @@
                 <li>
                     <h3 class="uk-accordion-title uk-text-primary">1: Lees de som zorgvuldig</h3>
                     <div class="uk-accordion-content">
-                        <p>Een <a href="#modal-example" uk-toggle>kapitaal</a> is SRD 12.000,- groot en staat uit tegen <span id="frac1"></span> rente per jaar.</p>
+                        <p>Een <a href="#modal-example" uk-toggle>kapitaal</a> is SRD 12.000,- groot en staat uit tegen
+                            <span id="frac1"></span> rente per jaar.</p>
                         <p>Na hoeveel maanden brengt het kapitaal SRD 360,- aan rente op?</p>
 
                         <ol class="uk-list">
@@ -48,11 +49,9 @@
                 <li>
                     <h3 class="uk-accordion-title uk-text-primary">2: Verzamel de belangrijke informatie</h3>
                     <div class="uk-accordion-content">
-                        <ul class="uk-list">
-                            <li>Het kapitaal = <span class="uk-text-danger"> 12.000 SRD</span></li>
-                            <li>De rente per jaar = <span class="uk-text-danger" id="frac2"></span></li>
-                            <li>De opbrengst is = <span class="uk-text-danger"> 360 SRD</span></li>
-                        </ul>
+                        <div class="uk-width-large">
+                            <img src="img/kapitaal2.png" alt="Image">
+                        </div>
                     </div>
                 </li>
 
@@ -62,7 +61,10 @@
                     <div class="uk-accordion-content">
                         <p>Voor kapitaalsommen gebruik je de volgende formule:</p>
                         <span id="frac3"></span>
-                        <p>Om de som op te lossen moet je dus eerst nog de rente per jaar in SRD berekenen.</p>
+                        <p>De opbrengst weet je al, dat is 360 SRD. Verder weet je ook dat de rente per jaar is 4 1/2% is. Dat kan je omrekenen naar SRD per jaar.</p>
+                        <div class="uk-width-large">
+                            <img src="img/kapitaal.png" alt="Image">
+                        </div>
                     </div>
                 </li>
 
@@ -71,7 +73,7 @@
                     <h3 class="uk-accordion-title uk-text-primary">4: Bereken de rente per jaar in SRD</h3>
                     <div class="uk-accordion-content">
                         <p class="uk-margin-remove">rente per jaar x kapitaal = rente per jaar in SRD</p>
-                        <p class="uk-margin-remove"><span class="uk-text-danger" id="frac4"></span> x <span class="uk-text-danger">12.000 SRD</span> = rente per jaar in SRD</p>
+                        <p class="uk-margin-remove"><span class="uk-text-danger" id="frac4"></span> x <span class="uk-text-danger">12.000 SRD</span>                            = rente per jaar in SRD</p>
                     </div>
                 </li>
             </ul>
@@ -80,15 +82,15 @@
         </div>
     </div>
 
-<!--modal 1-->
-<div id="modal-example" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-        <p>Een kapitaal is gewoon een geldbedrag, bijvoorbeeld 5.000 SRD.</p>
+    <!--modal 1-->
+    <div id="modal-example" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <p>Een kapitaal is gewoon een geldbedrag, bijvoorbeeld 5.000 SRD.</p>
+        </div>
     </div>
-</div>
 
-<!--Katex scripts-->
+    <!--Katex scripts-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit.min.js" integrity="sha256-ZfxNpEyIHFt0qMdwt/+cIhDnyZCykGkVd1uNz6TU/jY="
@@ -99,12 +101,10 @@
 
     <script>
         katex.render("4\\frac{1}{2}\\%", frac1);
-        katex.render("4\\frac{1}{2}\\%", frac2);
         katex.render(
             "\\dfrac{opbrengst\\space in\\space SRD}{rente\\space per\\space jaar\\space in\\space SRD}=tijd\\space in\\space jaren",
             frac3);
         katex.render("4\\frac{1}{2}\\%", frac4);
-
     </script>
 </body>
 
