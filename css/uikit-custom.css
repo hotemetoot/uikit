@@ -2,12 +2,8 @@ p, li {
     color: black;
 }
 
-.uk-list>li:nth-child(n+2), .uk-list>li>ul {
+/*.uk-list>li:nth-child(n+2), .uk-list>li>ul {
     margin-top: 0px;
-}
-
-/*.uk-background-primary {
-    background-color: yellow;
 }*/
 
 .katex .mathit {
