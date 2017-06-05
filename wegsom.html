@@ -30,18 +30,17 @@
 
                 <!--som-->
                 <li class="uk-open">
-                    <h3 class="uk-accordion-title">Kapitaalsom</h3>
+                    <h3 class="uk-accordion-title">Wegsom</h3>
                     <div class="uk-accordion-content">
-                        <p>Een <a href="#modal-example" uk-toggle>kapitaal</a> is SRD 12.000,- groot en staat uit tegen
-                            <span id="frac1"></span> rente per jaar.</p>
-                        <p>Na hoeveel maanden brengt het kapitaal SRD 360,- aan rente op?</p>
-
-                        <ol class="uk-list">
-                            <li>A: 8 maanden</li>
-                            <li>B: 6 maanden</li>
-                            <li>C: 9 maanden</li>
-                            <li>D: 18 maanden</li>
-                        </ol>
+                        <img src="img/wegsom1.svg" alt="">
+                        <p>Shamir vertrok uit F met een gemiddelde snelheid van 80 km/u naar S.</p>
+                        <p>Onderweg rustte hij even uit. Hoe lang heeft hij uitgerust?</p>
+                        <ul class="uk-list">
+                            <li>A: 32 minuten</li>
+                            <li>B: 40 minuten</li>
+                            <li>C: 62 minuten</li>
+                            <li>D: 80 minuten</li>
+                        </ul>
                     </div>
                 </li>
 
@@ -50,7 +49,7 @@
                     <h3 class="uk-accordion-title">Verzamel de informatie</h3>
                     <div class="uk-accordion-content">
                         <div class="uk-width-large">
-                            <img src="img/kapitaal2.png" alt="Image">
+                            <img src="img/wegsom2.svg" alt="Image">
                         </div>
                     </div>
                 </li>
@@ -59,12 +58,16 @@
                 <li>
                     <h3 class="uk-accordion-title">Kies de juiste formule</h3>
                     <div class="uk-accordion-content">
-                        <p>Voor kapitaalsommen gebruik je de volgende formule:</p>
-                        <span id="frac3"></span>
-                        <p>De opbrengst weet je al, dat is 360 SRD. Verder weet je ook dat de rente per jaar is 4 1/2% is. Dat kan je omrekenen naar SRD per jaar.</p>
+                        <p>Om de som op te lossen moet je twee dingen weten:</p>
+                        <ul class="uk-list">
+                            <li>1: Hoe lang was Shamir in totaal onderweg? (dus met de pauze erbij)</li>
+                            <li>2: Hoe lang was Shamir echt aan het rijden? (dus zonder de pauze)</li>
+                        </ul>
                         <div class="uk-width-large">
-                            <img src="img/kapitaal.png" alt="Image">
+                            <img src="img/wegsom3.svg" alt="Image">
                         </div>
+                        <p>Het verschil tussen die twee tijden is gelijk aan de pauze die Shamir heeft genomen</p>
+
                     </div>
                 </li>
 
@@ -100,11 +103,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script>
 
     <script>
-        katex.render("4\\frac{1}{2}\\%", frac1);
         katex.render(
             "\\dfrac{opbrengst\\space in\\space SRD}{rente\\space per\\space jaar\\space in\\space SRD}=tijd\\space in\\space jaren",
             frac3);
-        katex.render("4\\frac{1}{2}\\%", frac4);
     </script>
 </body>
 
