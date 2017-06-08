@@ -30,46 +30,65 @@
 
                 <!--som-->
                 <li class="uk-open">
-                    <h3 class="uk-accordion-title">Kapitaalsom</h3>
-                    <div class="uk-accordion-content">
-                        <p>Een <a href="#modal-example" uk-toggle>kapitaal</a> is SRD 12.000,- groot en staat uit tegen
-                            <span id="frac1"></span> rente per jaar.</p>
-                        <p>Na hoeveel maanden brengt het kapitaal SRD 360,- aan rente op?</p>
-
-                        <ol class="uk-list">
-                            <li>A: 8 maanden</li>
-                            <li>B: 6 maanden</li>
-                            <li>C: 9 maanden</li>
-                            <li>D: 18 maanden</li>
-                        </ol>
-                    </div>
-                </li>
-
-                <!--informatie-->
-                <li>
-                    <h3 class="uk-accordion-title">Verzamel de informatie</h3>
+                    <h3 class="uk-accordion-title">Sinaasappels</h3>
                     <div class="uk-accordion-content">
                         <div class="uk-width-large">
-                            <img src="img/kapitaal2.png" alt="Image">
+                            <img src="img/grafiek.png" alt="Image">
                         </div>
+                        <p>In de jaren 1990 en 1997 zijn er evenveel sinaasappels geoogst als in de jaren ...</p>
+                        <ul class="uk-list">
+                            <li>A: 1992 en 1994</li>
+                            <li>B: 1993 en 1994</li>
+                            <li>C: 1994 en 1995</li>
+                            <li>D: 1990 en 1995</li>
+                        </ul>
                     </div>
+                    <hr>
                 </li>
 
-                <!--formule-->
+
+                <!--aflezen-->
                 <li>
-                    <h3 class="uk-accordion-title">Kies de juiste formule</h3>
+                    <h3 class="uk-accordion-title">Grafieken aflezen</h3>
                     <div class="uk-accordion-content">
-                        <p>Voor kapitaalsommen gebruik je de volgende formule:</p>
-                        <span id="frac3"></span>
-                        <p>De opbrengst weet je al, dat is 360 SRD. Verder weet je ook dat de rente per jaar is 4 1/2% is. Dat
-                            kan je omrekenen naar SRD per jaar.</p>
+                        <p>Op de grafiek staan een aantal punten. Deze punten kan je aflezen door een rechte lijn naar links
+                            en naar benden te trekken.</p>
                         <div class="uk-width-large">
-                            <img src="img/kapitaal.png" alt="Image">
+                            <img src="img/aflezen.png" alt="Image">
+                        </div>
+                        <br>
+                        <div class="uk-width-large">
+                            <img src="img/sinas2.svg" alt="Image">
                         </div>
                     </div>
+                    <hr>
                 </li>
+
+                <!--aanpak-->
+                <li>
+                    <h3 class="uk-accordion-title">Plan van aanpak</h3>
+                    <div class="uk-accordion-content">
+                        <p>De enige manier om deze som op te lossen is om de antwoorden een voor een uit te proberen.</p>
+                    </div>
+                    <hr>
+                </li>
+
+                <!--oplossing-->
+                <li>
+                    <h3 class="uk-accordion-title">Oplossing</h3>
+                    <div class="uk-accordion-content">
+                        <div class="uk-width-large">
+                            <img src="img/sinas3.svg" alt="Image">
+                        </div>
+                        <p>Het juiste antwoord is dus antwoord B.</p>
+                    </div>
+                    <hr>
+                </li>
+
+
 
             </ul>
+
 
         </div>
     </div>
@@ -78,7 +97,13 @@
     <div id="modal-example" uk-modal>
         <div class="uk-modal-dialog uk-modal-body">
             <button class="uk-modal-close-default" type="button" uk-close></button>
-            <p>Een kapitaal is gewoon een heleboel geld, bijvoorbeeld 5.000 SRD.</p>
+            <p>Om de totale reistijd te berekenen kan je in stapjes werken:</p>
+            <ul class="uk-list">
+                <li>van 10.15 tot 11.00 is 45 minuten</li>
+                <li>van 11.00 tot 12.00 is 1 uur</li>
+                <li>van 12.00 tot 12.07 is 7 minuten</li>
+                <p>1 uur + 45 min + 7 min = 1 uur en 52 minuten</p>
+            </ul>
         </div>
     </div>
 
@@ -92,11 +117,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script>
 
     <script>
-        katex.render("4\\frac{1}{2}\\%", frac1);
         katex.render(
             "\\dfrac{opbrengst\\space in\\space SRD}{rente\\space per\\space jaar\\space in\\space SRD}=tijd\\space in\\space jaren",
             frac3);
-        katex.render("4\\frac{1}{2}\\%", frac4);
     </script>
 </body>
 
