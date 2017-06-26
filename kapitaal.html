@@ -49,8 +49,17 @@
                 <li>
                     <h3 class="uk-accordion-title">Verzamel de informatie</h3>
                     <div class="uk-accordion-content">
+                        <p>Bij een kapitaalsom is het handig om de informatie op te srchrijven in een tabel met 4 rijtjes zoals hieronder is gedaan.</p>
+                        <div class="uk-width-xlarge">
+                            <img src="img/kapitaal1.svg" alt="Image">
+                        </div>
+                        <p>Let op: <span id="frac2"></span> rente (rente per jaar) is niet gelijk aan 360 SRD (opgegeven rente).</p>
                         <div class="uk-width-large">
-                            <img src="img/kapitaal2.png" alt="Image">
+                            <img src="img/kapitaal2.svg" alt="Image">
+                        </div>
+                        <p>Dit kan je meteen invullen in de tabel:</p>
+                        <div class="uk-width-xlarge">
+                            <img src="img/kapitaal3.svg" alt="Image">
                         </div>
                     </div>
                 </li>
@@ -60,11 +69,23 @@
                     <h3 class="uk-accordion-title">Kies de juiste formule</h3>
                     <div class="uk-accordion-content">
                         <p>Voor kapitaalsommen gebruik je de volgende formule:</p>
-                        <span id="frac3"></span>
-                        <p>De opbrengst weet je al, dat is 360 SRD. Verder weet je ook dat de rente per jaar is 4 1/2% is. Dat
-                            kan je omrekenen naar SRD per jaar.</p>
+                        <div class="uk-width-xlarge">
+                            <img src="img/kapitaal5.svg" alt="Image">
+                        </div>
+                    </div>
+                </li>
+
+
+                <!--oplossing-->
+                <li>
+                    <h3 class="uk-accordion-title">Oplossing</h3>
+                    <div class="uk-accordion-content">
                         <div class="uk-width-large">
-                            <img src="img/kapitaal.png" alt="Image">
+                            <img src="img/kapitaal6.svg" alt="Image">
+                        </div>
+                        <br>
+                        <div class="uk-width-large">
+                            <img src="img/kapitaal7.svg" alt="Image">
                         </div>
                     </div>
                 </li>
@@ -93,9 +114,7 @@
 
     <script>
         katex.render("4\\frac{1}{2}\\%", frac1);
-        katex.render(
-            "\\dfrac{opbrengst\\space in\\space SRD}{rente\\space per\\space jaar\\space in\\space SRD}=tijd\\space in\\space jaren",
-            frac3);
+        katex.render("4\\frac{1}{2}\\%", frac2);
         katex.render("4\\frac{1}{2}\\%", frac4);
     </script>
 </body>
