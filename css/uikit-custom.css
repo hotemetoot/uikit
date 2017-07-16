@@ -15,3 +15,21 @@ p, li {
 .katex {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: #358691;
+}
+
+.uk-section-muted {
+    background: #F9F9F9;
+}
+
+.uk-navbar-nav>li.uk-active>a {
+    color: #ffffff;
+}
+
+.uk-link, a {
+    color: #358691;
+    text-decoration: none;
+    cursor: pointer;
+}

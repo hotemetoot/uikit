@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css">
+    <link href="css/uikit-custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- top navigation bar -->
+    <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active">
+                    <a href="index.html">Studieruimte</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--small container  -->
+    <div class="uk-section uk-section-muted" uk-height-viewport="expand: true">
+        <div class="uk-container uk-container-small">
+
+            <div id="test">
+      <div v-for="(question, index) in quiz2">
+        <div v-show="index === questionIndex">
+
+          <h3>Afstand som vraag nummer {{ index }}</h3>
+          <h4>Score: {{score}}</h4>
+          <p>Shamir woont 96 kilometer van school.</p>
+          <p>Om {{question.vertrek}} vertrekt hij van huis met een gemiddelde snelheid van {{question.snelheid}}. Om {{question.aankomst}} komt hij op school aan.</p>
+          <p>Onderweg rustte hij even uit. Hoe lang heeft hij uitgerust?</p>
+
+          <br/>
+
+          <span>
+            <input id="RadioA"  type="radio" v-model="pick" v-bind:value="options[0]">
+            <label for="RadioA">{{options[0]}} minuten</label>
+          </span>
+          <br>
+          <span>
+            <input id="RadioB" type="radio" v-model="pick" v-bind:value="options[1]" >
+            <label for="RadioB">{{options[1]}} minuten</label>
+          </span>
+          <br>
+          <span>
+            <input id="RadioC" type="radio" v-model="pick" v-bind:value="options[2]" >
+            <label for="RadioC">{{options[2]}} minuten</label>
+          </span>
+          <br>
+          <span>
+            <input id="RadioD" type="radio" v-model="pick" v-bind:value="options[3]" >
+            <label for="RadioD">{{options[3]}} minuten</label>
+          </span>
+          
+
+        </div>
+      </div>
+      <br>
+      <button v-on:click="check">
+        check
+      </button>
+      <br>
+
+      <br>
+      <button v-show="questionIndex < quiz2.length-1"  v-on:click="next">
+        next
+      </button>
+      <br>
+      <button v-show="questionIndex > 0" v-on:click="prev">
+        prev
+      </button>
+
+
+    </div>
+
+
+        </div>
+    </div>
+
+
+
+    <!--scripts-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit.min.js" integrity="sha256-ZfxNpEyIHFt0qMdwt/+cIhDnyZCykGkVd1uNz6TU/jY="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit-icons.min.js" integrity="sha256-BtKiVFqAoEVJYnSoG1tt98EQ11R3QjUCB9AtrW+66wo="
+        crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
