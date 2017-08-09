@@ -1,5 +1,5 @@
 var quiz2 = [{"vertrek":"10:15","aankomst":"12:07","afstand":96,"snelheid":"80 km/u ","correct_answer":40,"answer1":62,"answer2":50,"answer3":55,"answer4":40},
-             {"vertrek":"9:10","aankomst":"10:47","afstand":70,"snelheid":"70 km/u ","correct_answer":37,"answer1":37,"answer2":47,"answer3":52,"answer4":37},
+             {"vertrek":"9:10","aankomst":"10:47","afstand":70,"snelheid":"70 km/u ","correct_answer":37,"answer1":37,"answer2":47,"answer3":52,"answer4":64},
              {"vertrek":"8:05","aankomst":"9:50","afstand":40,"snelheid":"35 km/u ","correct_answer":36,"answer1":53,"answer2":46,"answer3":51,"answer4":36},
              {"vertrek":"7:10","aankomst":"8:40","afstand":120,"snelheid":"100 km/u ","correct_answer":18,"answer1":40,"answer2":28,"answer3":33,"answer4":18},
              {"vertrek":"6:15","aankomst":"8:30","afstand":150,"snelheid":"75 km/u ","correct_answer":15,"answer1":105,"answer2":25,"answer3":30,"answer4":15},

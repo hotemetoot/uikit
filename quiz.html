@@ -26,7 +26,7 @@
     <div class="uk-section uk-section-muted" uk-height-viewport="expand: true">
         <div class="uk-container uk-container-small">
 
-            <div id="test">
+    <div id="test">
       <div v-for="(question, index) in quiz2">
         <div v-show="index === questionIndex">
 
@@ -61,21 +61,20 @@
 
         </div>
       </div>
-      <br>
-      <button v-on:click="check">
-        check
-      </button>
-      <br>
+    <p uk-margin>
 
-      <br>
-      <button v-show="questionIndex < quiz2.length-1"  v-on:click="next">
-        next
-      </button>
-      <br>
-      <button v-show="questionIndex > 0" v-on:click="prev">
-        prev
+      <button class="uk-button uk-button-primary" v-on:click="check">
+        controleren
       </button>
 
+      <button class="uk-button uk-button-primary" v-show="questionIndex < quiz2.length-1"  v-on:click="next">
+        volgende
+      </button>
+
+      <button class="uk-button uk-button-primary" v-show="questionIndex > 0" v-on:click="prev">
+        vorige
+      </button>
+    </p>
 
     </div>
 
@@ -92,7 +91,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit-icons.min.js" integrity="sha256-BtKiVFqAoEVJYnSoG1tt98EQ11R3QjUCB9AtrW+66wo="
         crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
     <script src="js/script.js"></script>
 
 </body>
