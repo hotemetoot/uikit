@@ -2,6 +2,14 @@ p, li {
     color: black;
 }
 
+.phsc {
+    font-family: 'Patrick Hand', cursive;
+}
+
+
+
+
+
 .uk-list>li:nth-child(n+2), .uk-list>li>ul {
     margin-top: 0px;
 }
