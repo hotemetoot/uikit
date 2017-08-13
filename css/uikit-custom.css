@@ -17,12 +17,9 @@ p, li {
 }
 
 .uk-navbar-container:not(.uk-navbar-transparent) {
-    background: #358691;
+    background: #75C9B1;
 }
 
-.uk-section-muted {
-    background: #F9F9F9;
-}
 
 .uk-navbar-nav>li.uk-active>a {
     color: #ffffff;
