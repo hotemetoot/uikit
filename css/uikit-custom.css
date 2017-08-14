@@ -1,5 +1,7 @@
 p, li {
     color: black;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
 }
 
 .phsc {
